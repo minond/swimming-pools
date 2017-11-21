@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 #define POOL_SIZE 32000
 
@@ -9,7 +8,6 @@ typedef struct pool_s {
 } sp_pool;
 
 sp_pool *sp_build(sp_pool *neighbor) {
-  printf("sp_pool\n"); // XXX
   sp_pool *pool = malloc(sizeof(sp_pool));
   char *head = malloc(POOL_SIZE);
 
