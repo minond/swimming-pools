@@ -19,7 +19,9 @@ int main(int argc, char **argv) {
 
     marcos->first_name = "Marcos";
     marcos->last_name = "Marcos";
-    marcos->age = 28;
+    marcos->age = i;
+
+    printf("%s %s is %i years old.\n", marcos->first_name, marcos->last_name, marcos->age);
   }
 
   sp_free(pool);
